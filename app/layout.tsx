@@ -7,12 +7,8 @@ import { getRequiredEnv } from '@/lib/env'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// Validate environment variables in development
-if (process.env.NODE_ENV === 'development') {
-  getRequiredEnv()
-}
-
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://eden-hearth.co.uk'),
   title: 'Eden & Hearth - Kitchens & Landscaping | Greater Manchester & North West',
   description: 'Professional kitchen installation and landscaping services across Greater Manchester and the North West. Project-managed with clear schedules and pricing.',
   keywords: 'kitchens, landscaping, Greater Manchester, North West, kitchen installation, garden design, project management',
@@ -24,6 +20,11 @@ export const metadata: Metadata = {
     images: ['/logo.svg'],
   },
   robots: 'index, follow',
+}
+
+// Validate environment variables in development
+if (process.env.NODE_ENV === 'development') {
+  getRequiredEnv()
 }
 
 const structuredData = {
