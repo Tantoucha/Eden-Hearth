@@ -15,10 +15,12 @@
     "type-check": "tsc --noEmit",
     "add:promo": "node ./scripts/copy-promo-video.mjs"
   },
+  "optionalDependencies": {
+    "sharp": "^0.33.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "sharp": "^0.33.0",
     "tailwindcss": "^4.1.11",
     "typescript": "~5.8.3",
     "vite": "^7.1.0"

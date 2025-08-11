@@ -1,6 +1,22 @@
 #!/usr/bin/env node
 
-import sharp from 'sharp';
+// Skip processing in CI environments since images should already be processed locally
+if (process.env.CI) {
+  console.log('⏭️  Skipping image processing in CI environment');
+  console.log('   Images should be pre-processed locally and committed');
+  process.exit(0);
+}
+
+// Try to import sharp, skip if not available
+let sharp;
+try {
+  sharp = (await import('sharp')).default;
+} catch (error) {
+  console.log('⚠️  Sharp not available, skipping image processing');
+  console.log('   Run "npm install" to enable image processing');
+  process.exit(0);
+}
+
 import { readdir, access } from 'fs/promises';
 import { join, extname, basename } from 'path';
 import { fileURLToPath } from 'url';
