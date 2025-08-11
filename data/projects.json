@@ -1,0 +1,61 @@
+[
+  {
+    "slug": "didsbury-kitchen-2025",
+    "title": "Didsbury — Light Oak Kitchen",
+    "location": "Didsbury",
+    "categories": ["Kitchens"],
+    "summary": "Full refit including electrics, quartz worktops, and LED lighting scheme. Complete transformation of 1930s kitchen.",
+    "durationWeeks": 4,
+    "images": [
+      {"src": "/images/projects/didsbury/after-1.jpg", "alt": "Oak kitchen with quartz island and pendant lighting"},
+      {"src": "/images/projects/didsbury/after-2.jpg", "alt": "Detail of cabinet joinery and soft-close mechanisms"},
+      {"src": "/images/projects/didsbury/after-3.jpg", "alt": "Integrated appliances and handleless design"}
+    ],
+    "beforeAfter": {
+      "before": "/images/projects/didsbury/before.jpg",
+      "after": "/images/projects/didsbury/after-1.jpg"
+    },
+    "testimonial": {
+      "quote": "Tidy team, clear schedule, great finish. Couldn't be happier with our new kitchen.",
+      "author": "J. Smith, Didsbury"
+    }
+  },
+  {
+    "slug": "wilmslow-patio-2024",
+    "title": "Wilmslow — Sandstone Patio & Garden",
+    "location": "Wilmslow",
+    "categories": ["Landscaping", "Patios"],
+    "summary": "Large sandstone patio with raised planters, drainage solutions, and mature tree integration.",
+    "durationWeeks": 3,
+    "images": [
+      {"src": "/images/projects/wilmslow/after-1.jpg", "alt": "Sandstone patio with integrated planters"},
+      {"src": "/images/projects/wilmslow/after-2.jpg", "alt": "Garden structure with climbing frame"},
+      {"src": "/images/projects/wilmslow/after-3.jpg", "alt": "Drainage channels and level changes"}
+    ],
+    "beforeAfter": {
+      "before": "/images/projects/wilmslow/before.jpg",
+      "after": "/images/projects/wilmslow/after-1.jpg"
+    },
+    "testimonial": {
+      "quote": "Transformed our back garden completely. Professional from start to finish.",
+      "author": "M. Johnson, Wilmslow"
+    }
+  },
+  {
+    "slug": "altrincham-kitchen-extension",
+    "title": "Altrincham — Open Plan Kitchen Extension",
+    "location": "Altrincham",
+    "categories": ["Kitchens"],
+    "summary": "Single-storey extension with bi-fold doors, handleless kitchen units, and coordinated utility room.",
+    "durationWeeks": 6,
+    "images": [
+      {"src": "/images/projects/altrincham/after-1.jpg", "alt": "Open plan kitchen extension with bi-fold doors"},
+      {"src": "/images/projects/altrincham/after-2.jpg", "alt": "Kitchen island with breakfast bar seating"},
+      {"src": "/images/projects/altrincham/after-3.jpg", "alt": "Coordinated utility room design"}
+    ],
+    "testimonial": {
+      "quote": "Exceeded expectations. The project management was excellent throughout.",
+      "author": "R. Williams, Altrincham"
+    }
+  }
+]

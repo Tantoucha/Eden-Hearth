@@ -3,6 +3,9 @@ export function initializeWebsite() {
   const app = document.querySelector<HTMLDivElement>('#app')!;
   
   app.innerHTML = `
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
@@ -14,6 +17,7 @@ export function initializeWebsite() {
           <a href="#services" class="nav-link">Services</a>
           <a href="#portfolio" class="nav-link">Portfolio</a>
           <a href="#about" class="nav-link">About</a>
+          <a href="#faqs" class="nav-link">FAQs</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
         <div class="nav-toggle" id="nav-toggle">
@@ -23,6 +27,21 @@ export function initializeWebsite() {
         </div>
       </div>
     </nav>
+
+    <!-- Mobile CTA Bar -->
+    <div class="mobile-cta-bar">
+      <a href="tel:+44-0000-000000" class="mobile-cta mobile-cta--call">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        <span>Call Now</span>
+      </a>
+      <a href="#contact" class="mobile-cta mobile-cta--quote">
+        <i class="fas fa-calculator" aria-hidden="true"></i>
+        <span>Get Quote</span>
+      </a>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">`
 
     <!-- HERO: Kitchens + Landscaping -->
     <link rel="preload" as="image" href="/images/kitchen-1920.jpg" fetchpriority="high">
@@ -55,6 +74,58 @@ export function initializeWebsite() {
           <li>Clear schedules &amp; pricing</li>
           <li>Respectful on site</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip" aria-label="Certifications and guarantees">
+      <div class="container">
+        <div class="trust-badges">
+          <div class="trust-badge" aria-label="TrustMark certified">
+            <svg width="60" height="40" viewBox="0 0 60 40" aria-hidden="true">
+              <rect x="5" y="5" width="50" height="30" rx="3" fill="var(--brand)" stroke="var(--accent)" stroke-width="1"/>
+              <text x="30" y="25" text-anchor="middle" font-size="8" fill="var(--paper)">TRUST</text>
+            </svg>
+          </div>
+          <div class="trust-badge" aria-label="FMB member">
+            <svg width="60" height="40" viewBox="0 0 60 40" aria-hidden="true">
+              <rect x="5" y="5" width="50" height="30" rx="3" fill="var(--brand)" stroke="var(--accent)" stroke-width="1"/>
+              <text x="30" y="25" text-anchor="middle" font-size="10" fill="var(--paper)">FMB</text>
+            </svg>
+          </div>
+          <div class="trust-badge" aria-label="Which? Trusted Trader">
+            <svg width="60" height="40" viewBox="0 0 60 40" aria-hidden="true">
+              <rect x="5" y="5" width="50" height="30" rx="3" fill="var(--brand)" stroke="var(--accent)" stroke-width="1"/>
+              <text x="30" y="25" text-anchor="middle" font-size="8" fill="var(--paper)">WHICH?</text>
+            </svg>
+          </div>
+        </div>
+        <p class="trust-statement">
+          Fully insured · Written quotations · 12-month workmanship guarantee
+        </p>
+      </div>
+    </section>
+
+    <!-- Snapshot Stats -->
+    <section class="stats-snapshot">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            <span class="stat-number" data-years="8">8+</span>
+            <span class="stat-label">Years in business</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-hammer" aria-hidden="true"></i>
+            <span class="stat-number" data-projects="150">150+</span>
+            <span class="stat-label">Projects completed</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <span class="stat-number" data-rating="4.9">4.9/5</span>
+            <span class="stat-label">Average review rating</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -98,17 +169,74 @@ export function initializeWebsite() {
         </div>
       </div>
     </section>
-              <i class="fas fa-tools"></i>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-home">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What Our Customers Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <p>"Tidy team, clear schedule, great finish. Couldn't be happier with our new kitchen."</p>
             </div>
-            <h3 class="service-title">Maintenance</h3>
-            <p class="service-description">Keep your installations looking perfect with our comprehensive maintenance services.</p>
-            <ul class="service-features">
-              <li>Regular Garden Maintenance</li>
-              <li>Kitchen Care & Repairs</li>
-              <li>Seasonal Services</li>
-              <li>Emergency Support</li>
-            </ul>
+            <div class="testimonial-author">
+              <strong>J. Smith</strong>
+              <span>Didsbury</span>
+            </div>
           </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <p>"Transformed our back garden completely. Professional from start to finish."</p>
+            </div>
+            <div class="testimonial-author">
+              <strong>M. Johnson</strong>
+              <span>Wilmslow</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <p>"Exceeded expectations. The project management was excellent throughout."</p>
+            </div>
+            <div class="testimonial-author">
+              <strong>R. Williams</strong>
+              <span>Altrincham</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-cta">
+          <a href="/testimonials" class="btn btn-ghost">Read more reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home FAQs Section -->
+    <section class="faqs-home">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Common Questions</h2>
+        </div>
+        <div class="faqs-home-grid">
+          <div class="faq-home-item">
+            <h3>Do you provide itemised quotes?</h3>
+            <p>Yes, we provide detailed, itemised quotes showing materials, labour, and timeline for complete transparency.</p>
+          </div>
+          <div class="faq-home-item">
+            <h3>What are your typical lead times?</h3>
+            <p>Kitchen projects typically take 4-6 weeks, landscaping projects 2-4 weeks, depending on scope.</p>
+          </div>
+          <div class="faq-home-item">
+            <h3>What warranty do you provide?</h3>
+            <p>All workmanship comes with a 12-month guarantee. We conduct a final walkthrough and address any concerns.</p>
+          </div>
+          <div class="faq-home-item">
+            <h3>What areas do you cover?</h3>
+            <p>We serve Greater Manchester, Cheshire and the broader North West region.</p>
+          </div>
+        </div>
+        <div class="faqs-home-cta">
+          <a href="/faqs" class="btn btn-primary">View all FAQs</a>
         </div>
       </div>
     </section>
