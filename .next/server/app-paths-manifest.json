@@ -1,19 +1,19 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/(site)/page": "app/(site)/page.js",
-  "/api/contact/route": "app/api/contact/route.js",
   "/api/health/route": "app/api/health/route.js",
+  "/api/contact/route": "app/api/contact/route.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
   "/(legal)/terms/page": "app/(legal)/terms/page.js",
-  "/(site)/about/page": "app/(site)/about/page.js",
+  "/(site)/contact/page": "app/(site)/contact/page.js",
   "/(legal)/privacy/page": "app/(legal)/privacy/page.js",
   "/(legal)/cookies/page": "app/(legal)/cookies/page.js",
   "/(site)/portfolio/page": "app/(site)/portfolio/page.js",
   "/(site)/faqs/page": "app/(site)/faqs/page.js",
-  "/(site)/testimonials/page": "app/(site)/testimonials/page.js",
   "/(site)/services/page": "app/(site)/services/page.js",
+  "/(site)/about/page": "app/(site)/about/page.js",
   "/status/page": "app/status/page.js",
-  "/(site)/contact/page": "app/(site)/contact/page.js",
+  "/(site)/testimonials/page": "app/(site)/testimonials/page.js",
   "/(site)/projects/[slug]/page": "app/(site)/projects/[slug]/page.js"
 }

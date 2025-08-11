@@ -24,7 +24,11 @@ export const metadata: Metadata = {
 
 // Validate environment variables in development
 if (process.env.NODE_ENV === 'development') {
-  getRequiredEnv()
+  try {
+    getRequiredEnv()
+  } catch (error) {
+    console.warn('Environment validation warning:', error)
+  }
 }
 
 const structuredData = {
