@@ -1,28 +1,38 @@
 {
   "name": "eden-hearth-website",
-  "private": false,
+  "private": true,
   "version": "1.0.0",
   "description": "Professional website for Eden & Hearth Landscaping and Kitchen Installers - serving Greater Manchester and North West",
   "author": "Eden & Hearth Team",
   "keywords": ["landscaping", "kitchen installation", "manchester", "north west", "garden design", "professional services"],
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "npm run build",
-    "type-check": "tsc --noEmit",
-    "add:promo": "node ./scripts/copy-promo-video.mjs",
-    "process-images": "node ./scripts/make-hero-images.mjs"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "prebuild": "node ./scripts/make-hero-images.mjs",
+    "add:promo": "node ./scripts/copy-promo-video.mjs"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11",
-    "vite": "^7.1.0"
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@prisma/client": "^5.17.0",
+    "prisma": "^5.17.0",
+    "zod": "^3.23.8",
+    "resend": "^3.5.0"
   },
   "devDependencies": {
-    "sharp": "^0.33.0",
-    "typescript": "~5.8.3"
+    "@types/node": "^20.14.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.5",
+    "typescript": "^5.5.4",
+    "tailwindcss": "^3.4.6",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "sharp": "^0.33.4"
   }
 }
