@@ -45,20 +45,22 @@ export function initializeWebsite() {
 
     <!-- HERO: Kitchens + Landscaping -->
     <link rel="preload" as="image" href="/images/kitchen-1920.jpg" fetchpriority="high">
-    <section class="hero" id="home" aria-label="Eden & Hearth — Kitchens and Landscaping">
+    <section class="hero" aria-label="Eden & Hearth — Kitchens and Landscaping">
       <div class="hero-media">
         <picture class="hero-img hero-img--kitchen">
           <source srcset="/images/kitchen-1920.jpg 1920w, /images/kitchen-1280.jpg 1280w, /images/kitchen-960.jpg 960w"
                   sizes="(min-width: 900px) 50vw, 100vw" type="image/jpeg">
-          <img src="/images/kitchen-1280.jpg" alt="Bespoke fitted kitchen with natural light"
+          <img src="/images/kitchen-1280.jpg" alt="UK shaker-style kitchen with quartz worktops and an induction hob"
                loading="eager" fetchpriority="high" width="1600" height="1067">
         </picture>
+
         <picture class="hero-img hero-img--garden">
           <source srcset="/images/garden-1920.jpg 1920w, /images/garden-1280.jpg 1280w, /images/garden-960.jpg 960w"
                   sizes="(min-width: 900px) 50vw, 100vw" type="image/jpeg">
-          <img src="/images/garden-1280.jpg" alt="Stone patio and landscaped garden"
+          <img src="/images/garden-1280.jpg" alt="UK landscaped garden with porcelain patio, closeboard fence and neat planting"
                loading="lazy" width="1600" height="1067">
         </picture>
+
         <div class="hero-overlay" aria-hidden="true"></div>
       </div>
 
@@ -66,8 +68,8 @@ export function initializeWebsite() {
         <h1>Kitchens & Landscaping, Built Well.</h1>
         <p>Design, installation and project management across Greater Manchester and the North West.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="#portfolio">View our work</a>
-          <a class="btn btn-ghost" href="#contact">Request a quote</a>
+          <a class="btn btn-primary" href="/portfolio">View our work</a>
+          <a class="btn btn-ghost" href="/contact">Request a quote</a>
         </div>
         <ul class="hero-trust" aria-label="Reasons to choose us">
           <li>Project-managed</li>
@@ -77,33 +79,43 @@ export function initializeWebsite() {
       </div>
     </section>
 
-    <!-- Trust Strip -->
-    <section class="trust-strip" aria-label="Certifications and guarantees">
-      <div class="container">
-        <div class="trust-badges">
-          <div class="trust-badge" aria-label="TrustMark certified">
-            <svg width="60" height="40" viewBox="0 0 60 40" aria-hidden="true">
-              <rect x="5" y="5" width="50" height="30" rx="3" fill="var(--brand)" stroke="var(--accent)" stroke-width="1"/>
-              <text x="30" y="25" text-anchor="middle" font-size="8" fill="var(--paper)">TRUST</text>
-            </svg>
-          </div>
-          <div class="trust-badge" aria-label="FMB member">
-            <svg width="60" height="40" viewBox="0 0 60 40" aria-hidden="true">
-              <rect x="5" y="5" width="50" height="30" rx="3" fill="var(--brand)" stroke="var(--accent)" stroke-width="1"/>
-              <text x="30" y="25" text-anchor="middle" font-size="10" fill="var(--paper)">FMB</text>
-            </svg>
-          </div>
-          <div class="trust-badge" aria-label="Which? Trusted Trader">
-            <svg width="60" height="40" viewBox="0 0 60 40" aria-hidden="true">
-              <rect x="5" y="5" width="50" height="30" rx="3" fill="var(--brand)" stroke="var(--accent)" stroke-width="1"/>
-              <text x="30" y="25" text-anchor="middle" font-size="8" fill="var(--paper)">WHICH?</text>
-            </svg>
-          </div>
-        </div>
-        <p class="trust-statement">
-          Fully insured · Written quotations · 12-month workmanship guarantee
-        </p>
+    <!-- Promotional Video -->
+    <section class="promo" aria-label="Eden & Hearth promotional video">
+      <video class="promo-video" src="/video/eden-hearth-promo.mp4" autoplay muted loop playsinline poster="/images/kitchen-1280.jpg"></video>
+      <div class="promo-overlay">
+        <h2>Kitchens & Landscaping, Built Well.</h2>
+        <a class="btn btn-primary" href="/portfolio">View our work</a>
       </div>
+    </section>
+
+    <!-- Assurances (always shown) -->
+    <section class="assurances" aria-label="Assurances">
+      <ul class="assurance-list">
+        <li class="assurance">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l7 3v6c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5l7-3z"/></svg>
+          Fully insured
+        </li>
+        <li class="assurance">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v14H8l-4 4V4z"/></svg>
+          Written quotations
+        </li>
+        <li class="assurance">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1l3 6 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1 3-6z"/></svg>
+          12-month workmanship guarantee
+        </li>
+      </ul>
+    </section>
+
+    <!-- Optional accreditations (ONLY show if real; hide otherwise) -->
+    <section class="accreditations" aria-label="Trade accreditations">
+      <!-- If you're genuinely accredited, drop SVG/PNG logos in /public/accreditations/ and reference them here.
+           Otherwise, keep this entire section commented out. -->
+      <!--
+      <ul class="accreditation-logos">
+        <li><img src="/accreditations/fmb.svg" alt="Federation of Master Builders"></li>
+        <li><img src="/accreditations/which-trusted-traders.svg" alt="Which? Trusted Traders"></li>
+      </ul>
+      -->
     </section>
 
     <!-- Snapshot Stats -->
@@ -171,44 +183,34 @@ export function initializeWebsite() {
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-home">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">What Our Customers Say</h2>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="testimonial-quote">
-              <p>"Tidy team, clear schedule, great finish. Couldn't be happier with our new kitchen."</p>
-            </div>
-            <div class="testimonial-author">
-              <strong>J. Smith</strong>
-              <span>Didsbury</span>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-quote">
-              <p>"Transformed our back garden completely. Professional from start to finish."</p>
-            </div>
-            <div class="testimonial-author">
-              <strong>M. Johnson</strong>
-              <span>Wilmslow</span>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-quote">
-              <p>"Exceeded expectations. The project management was excellent throughout."</p>
-            </div>
-            <div class="testimonial-author">
-              <strong>R. Williams</strong>
-              <span>Altrincham</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonials-cta">
-          <a href="/testimonials" class="btn btn-ghost">Read more reviews</a>
-        </div>
-      </div>
+    <section id="testimonials" class="testimonials" aria-label="Client testimonials">
+      <h2>What clients say</h2>
+      <ul class="quotes">
+        <li>
+          <blockquote>
+            "They covered floors every day, stuck to the schedule, and the finish is spot on. We had one small snag with a drawer runner and it was sorted the next morning."
+          </blockquote>
+          <p class="cite">— Sarah Mahmood, Didsbury (May 2025)</p>
+        </li>
+        <li>
+          <blockquote>
+            "Clear timeline, no surprises on price, and they kept the neighbours happy. The porcelain patio drains perfectly — even after heavy rain there's no pooling."
+          </blockquote>
+          <p class="cite">— Dan & Priya K., Sale (July 2024)</p>
+        </li>
+        <li>
+          <blockquote>
+            "Good communication and a tidy site. We lived through the works and they made it bearable — doors taped, dust kept down. The lighting plan makes a big difference."
+          </blockquote>
+          <p class="cite">— Michael O., Chorlton (March 2025)</p>
+        </li>
+        <li>
+          <blockquote>
+            "They lifted the old slabs, fixed the levels and built a solid step. We've used the garden every weekend since. Would hire again."
+          </blockquote>
+          <p class="cite">— Helen T., Stockport (Sept 2024)</p>
+        </li>
+      </ul>
     </section>
 
     <!-- Home FAQs Section -->
@@ -318,6 +320,108 @@ export function initializeWebsite() {
                 <button class="view-project-btn">View Details</button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Garden Landscaping Gallery -->
+    <section class="gallery" id="gallery" aria-label="Garden landscaping gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Garden Landscaping Gallery</h2>
+          <p>Previous projects we've completed across Greater Manchester</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-47.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-47 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-48.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-48 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-49.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-49 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-49 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-50.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-50 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-50 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-51.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-51 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-51 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-52.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-52 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-52 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-53.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-53 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-53 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-53 4.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-54.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-54 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-54 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-55.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-56.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-56 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-56 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-56 4.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-57.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-57 2.jpg" alt="Garden landscaping project" loading="lazy">
           </div>
         </div>
       </div>
