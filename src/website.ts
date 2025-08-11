@@ -246,7 +246,7 @@ export function initializeWebsite() {
           <div class="founders-grid">
             <div class="founder-card">
               <div class="founder-image">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Abdul Tantouch" loading="lazy">
+                <img src="./abdul-tantouch.jpg" alt="Abdul Tantouch" loading="lazy">
               </div>
               <div class="founder-info">
                 <h3 class="founder-name">Abdul Tantouch</h3>
