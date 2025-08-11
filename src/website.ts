@@ -309,14 +309,16 @@ export function initializeWebsite() {
               <i class="fas fa-phone"></i>
               <div>
                 <h4>Phone</h4>
-                <p>+44 7XXX XXX XXX</p>
+                <p>+44 7721 142 355</p>
+                <p>+44 7879 296 048</p>
+                <p>+44 7802 487 781</p>
               </div>
             </div>
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
               <div>
                 <h4>Email</h4>
-                <p>info@edenhearth.co.uk</p>
+                <p>help@eden-hearth.co.uk</p>
               </div>
             </div>
             <div class="contact-item">
@@ -409,8 +411,8 @@ export function initializeWebsite() {
           <div class="footer-section">
             <h4 class="footer-title">Contact Info</h4>
             <div class="footer-contact">
-              <p><i class="fas fa-phone"></i> +44 7XXX XXX XXX</p>
-              <p><i class="fas fa-envelope"></i> info@edenhearth.co.uk</p>
+              <p><i class="fas fa-phone"></i> +44 7721 142 355</p>
+              <p><i class="fas fa-envelope"></i> help@eden-hearth.co.uk</p>
               <p><i class="fas fa-map-marker-alt"></i> Greater Manchester & North West</p>
             </div>
           </div>
