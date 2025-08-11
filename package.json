@@ -1,0 +1,22 @@
+{
+  "name": "eden-hearth-website",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Professional website for Eden & Hearth Landscaping and Kitchen Installers - serving Greater Manchester and North West",
+  "author": "Eden & Hearth Team",
+  "keywords": ["landscaping", "kitchen installation", "manchester", "north west", "garden design", "professional services"],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.0"
+  }
+}
