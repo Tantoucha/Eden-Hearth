@@ -1,15 +1,24 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "framework": "vite",
+  "framework": "nextjs",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    }
   ],
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/_next/static/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
