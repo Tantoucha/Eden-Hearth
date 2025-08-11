@@ -31,25 +31,11 @@ export function initializeWebsite() {
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
-        <h1 class="hero-title">Transform Your Space</h1>
-        <p class="hero-subtitle">Professional Landscaping & Kitchen Installation Services across Greater Manchester</p>
+        <h1 class="hero-title">Elevated Interiors. Lasting Craftsmanship.</h1>
+        <p class="hero-subtitle">Tailored renovations designed for the way you live—built to endure with understated elegance.</p>
         <div class="hero-buttons">
-          <button class="btn btn-primary" onclick="scrollToSection('contact')">Get Free Quote</button>
-          <button class="btn btn-secondary" onclick="scrollToSection('portfolio')">View Our Work</button>
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">500+</span>
-          <span class="stat-label">Projects Completed</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">15+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Satisfaction Rate</span>
+          <a href="#portfolio" class="btn btn-primary">View Our Portfolio</a>
+          <a href="#contact" class="btn btn-secondary">Request a Quote</a>
         </div>
       </div>
     </section>
