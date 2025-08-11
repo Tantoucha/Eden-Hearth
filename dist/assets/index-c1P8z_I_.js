@@ -1,0 +1,697 @@
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const s of e)if(s.type==="childList")for(const o of s.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&l(o)}).observe(document,{childList:!0,subtree:!0});function i(e){const s={};return e.integrity&&(s.integrity=e.integrity),e.referrerPolicy&&(s.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?s.credentials="include":e.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function l(e){if(e.ep)return;e.ep=!0;const s=i(e);fetch(e.href,s)}})();function d(){const a=document.querySelector("#app");a.innerHTML=`
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="/" class="brand">
+          <img src="/logo.svg" alt="Eden & Hearth" width="200" height="40" decoding="async">
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#faqs" class="nav-link">FAQs</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile CTA Bar -->
+    <div class="mobile-cta-bar">
+      <a href="tel:+44-0000-000000" class="mobile-cta mobile-cta--call">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        <span>Call Now</span>
+      </a>
+      <a href="#contact" class="mobile-cta mobile-cta--quote">
+        <i class="fas fa-calculator" aria-hidden="true"></i>
+        <span>Get Quote</span>
+      </a>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+    <!-- HERO: Kitchens + Landscaping -->
+    <link rel="preload" as="image" href="/images/kitchen-1920.jpg" fetchpriority="high">
+    <section class="hero" aria-label="Eden & Hearth — Kitchens and Landscaping">
+      <div class="hero-media">
+        <picture class="hero-img hero-img--kitchen">
+          <source srcset="/images/kitchen-1920.jpg 1920w, /images/kitchen-1280.jpg 1280w, /images/kitchen-960.jpg 960w"
+                  sizes="(min-width: 900px) 50vw, 100vw" type="image/jpeg">
+          <img src="/images/kitchen-1280.jpg" alt="UK shaker-style kitchen with quartz worktops and an induction hob"
+               loading="eager" fetchpriority="high" width="1600" height="1067">
+        </picture>
+
+        <picture class="hero-img hero-img--garden">
+          <source srcset="/images/garden-1920.jpg 1920w, /images/garden-1280.jpg 1280w, /images/garden-960.jpg 960w"
+                  sizes="(min-width: 900px) 50vw, 100vw" type="image/jpeg">
+          <img src="/images/garden-1280.jpg" alt="UK landscaped garden with porcelain patio, closeboard fence and neat planting"
+               loading="lazy" width="1600" height="1067">
+        </picture>
+
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1>Kitchens & Landscaping, Built Well.</h1>
+        <p>Design, installation and project management across Greater Manchester and the North West.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="/portfolio">View our work</a>
+          <a class="btn btn-ghost" href="/contact">Request a quote</a>
+        </div>
+        <ul class="hero-trust" aria-label="Reasons to choose us">
+          <li>Project-managed</li>
+          <li>Clear schedules &amp; pricing</li>
+          <li>Respectful on site</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Promotional Video -->
+    <section class="promo" aria-label="Eden & Hearth promotional video">
+      <video class="promo-video" src="/video/eden-hearth-promo.mp4" autoplay muted loop playsinline poster="/images/kitchen-1280.jpg"></video>
+      <div class="promo-overlay">
+        <h2>Kitchens & Landscaping, Built Well.</h2>
+        <a class="btn btn-primary" href="/portfolio">View our work</a>
+      </div>
+    </section>
+
+    <!-- Assurances (always shown) -->
+    <section class="assurances" aria-label="Assurances">
+      <ul class="assurance-list">
+        <li class="assurance">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l7 3v6c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5l7-3z"/></svg>
+          Fully insured
+        </li>
+        <li class="assurance">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v14H8l-4 4V4z"/></svg>
+          Written quotations
+        </li>
+        <li class="assurance">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1l3 6 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1 3-6z"/></svg>
+          12-month workmanship guarantee
+        </li>
+      </ul>
+    </section>
+
+    <!-- Optional accreditations (ONLY show if real; hide otherwise) -->
+    <section class="accreditations" aria-label="Trade accreditations">
+      <!-- If you're genuinely accredited, drop SVG/PNG logos in /public/accreditations/ and reference them here.
+           Otherwise, keep this entire section commented out. -->
+      <!--
+      <ul class="accreditation-logos">
+        <li><img src="/accreditations/fmb.svg" alt="Federation of Master Builders"></li>
+        <li><img src="/accreditations/which-trusted-traders.svg" alt="Which? Trusted Traders"></li>
+      </ul>
+      -->
+    </section>
+
+    <!-- Snapshot Stats -->
+    <section class="stats-snapshot">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            <span class="stat-number" data-years="8">8+</span>
+            <span class="stat-label">Years in business</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-hammer" aria-hidden="true"></i>
+            <span class="stat-number" data-projects="150">150+</span>
+            <span class="stat-label">Projects completed</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <span class="stat-number" data-rating="4.9">4.9/5</span>
+            <span class="stat-label">Average review rating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Services</h2>
+          <p class="section-description">We design and build functional kitchens and considered outdoor spaces. Our work focuses on durable materials, tidy workmanship and reliable timelines.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3 class="service-title">Kitchens</h3>
+            <p class="service-description">Design, supply and installation of fitted kitchens, worktops and lighting. Coordination with trades. Snag-free handover.</p>
+            <ul class="service-features">
+              <li>Kitchen Design & Planning</li>
+              <li>Cabinet Installation</li>
+              <li>Worktop Installation</li>
+              <li>Lighting & Electrical</li>
+              <li>Trade Coordination</li>
+            </ul>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3 class="service-title">Landscaping</h3>
+            <p class="service-description">Patios, paths and garden structures. Drainage and levels resolved properly. Planting plans available on request.</p>
+            <ul class="service-features">
+              <li>Patio & Path Installation</li>
+              <li>Garden Structures</li>
+              <li>Drainage Solutions</li>
+              <li>Level Correction</li>
+              <li>Planting Plans</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" aria-label="Client testimonials">
+      <h2>What clients say</h2>
+      <ul class="quotes">
+        <li>
+          <blockquote>
+            "They covered floors every day, stuck to the schedule, and the finish is spot on. We had one small snag with a drawer runner and it was sorted the next morning."
+          </blockquote>
+          <p class="cite">— Sarah Mahmood, Didsbury (May 2025)</p>
+        </li>
+        <li>
+          <blockquote>
+            "Clear timeline, no surprises on price, and they kept the neighbours happy. The porcelain patio drains perfectly — even after heavy rain there's no pooling."
+          </blockquote>
+          <p class="cite">— Dan & Priya K., Sale (July 2024)</p>
+        </li>
+        <li>
+          <blockquote>
+            "Good communication and a tidy site. We lived through the works and they made it bearable — doors taped, dust kept down. The lighting plan makes a big difference."
+          </blockquote>
+          <p class="cite">— Michael O., Chorlton (March 2025)</p>
+        </li>
+        <li>
+          <blockquote>
+            "They lifted the old slabs, fixed the levels and built a solid step. We've used the garden every weekend since. Would hire again."
+          </blockquote>
+          <p class="cite">— Helen T., Stockport (Sept 2024)</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Home FAQs Section -->
+    <section class="faqs-home">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Common Questions</h2>
+        </div>
+        <div class="faqs-home-grid">
+          <div class="faq-home-item">
+            <h3>Do you provide itemised quotes?</h3>
+            <p>Yes, we provide detailed, itemised quotes showing materials, labour, and timeline for complete transparency.</p>
+          </div>
+          <div class="faq-home-item">
+            <h3>What are your typical lead times?</h3>
+            <p>Kitchen projects typically take 4-6 weeks, landscaping projects 2-4 weeks, depending on scope.</p>
+          </div>
+          <div class="faq-home-item">
+            <h3>What warranty do you provide?</h3>
+            <p>All workmanship comes with a 12-month guarantee. We conduct a final walkthrough and address any concerns.</p>
+          </div>
+          <div class="faq-home-item">
+            <h3>What areas do you cover?</h3>
+            <p>We serve Greater Manchester, Cheshire and the broader North West region.</p>
+          </div>
+        </div>
+        <div class="faqs-home-cta">
+          <a href="/faqs" class="btn btn-primary">View all FAQs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Recent Projects</h2>
+          <p class="section-description">Take a look at some of our completed landscaping and kitchen installations</p>
+        </div>
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="landscaping">Landscaping</button>
+          <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="landscaping">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop" alt="Garden Landscape" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3>Modern Garden Design</h3>
+                <p>Complete landscape transformation with native plants and modern hardscaping</p>
+                <button class="view-project-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="kitchen">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop" alt="Modern Kitchen" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3>Contemporary Kitchen</h3>
+                <p>Sleek modern kitchen with custom cabinetry and premium appliances</p>
+                <button class="view-project-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="landscaping">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&h=400&fit=crop" alt="Backyard Oasis" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3>Backyard Oasis</h3>
+                <p>Luxury outdoor living space with water features and entertainment area</p>
+                <button class="view-project-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="kitchen">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&h=400&fit=crop" alt="Traditional Kitchen" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3>Traditional Kitchen</h3>
+                <p>Classic kitchen renovation with handcrafted details and premium finishes</p>
+                <button class="view-project-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="landscaping">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Front Yard Landscape" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3>Front Yard Makeover</h3>
+                <p>Stunning curb appeal enhancement with drought-resistant landscaping</p>
+                <button class="view-project-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="kitchen">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=600&h=400&fit=crop" alt="Open Kitchen" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3>Open Concept Kitchen</h3>
+                <p>Spacious open kitchen design perfect for entertaining and family life</p>
+                <button class="view-project-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Garden Landscaping Gallery -->
+    <section class="gallery" id="gallery" aria-label="Garden landscaping gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Garden Landscaping Gallery</h2>
+          <p>Previous projects we've completed across Greater Manchester</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-47.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-47 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-48.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-48 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-49.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-49 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-49 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-50.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-50 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-50 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-51.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-51 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-51 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-52.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-52 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-52 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-53.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-53 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-53 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-53 4.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-54.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-54 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-54 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-55.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-56.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-56 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-56 3.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-56 4.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-57.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/gallery/PHOTO-2025-06-16-19-59-57 2.jpg" alt="Garden landscaping project" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">What we do</h2>
+            <p class="about-description">
+              We design and build functional kitchens and considered outdoor spaces. Our work focuses on durable materials, tidy workmanship and reliable timelines.
+            </p>
+            <div class="about-features">
+              <div class="feature">
+                <i class="fas fa-award"></i>
+                <div>
+                  <h4>Quality Craftsmanship</h4>
+                  <p>Every project is completed to the highest standards with attention to detail.</p>
+                </div>
+              </div>
+              <div class="feature">
+                <i class="fas fa-users"></i>
+                <div>
+                  <h4>Expert Team</h4>
+                  <p>Our certified installers and skilled professionals bring years of experience to every project.</p>
+                </div>
+              </div>
+              <div class="feature">
+                <i class="fas fa-handshake"></i>
+                <div>
+                  <h4>Customer Focused</h4>
+                  <p>We work closely with clients to bring their vision to life within budget.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=500&fit=crop" alt="Our Team" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How we work</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Consultation</h3>
+            <p class="step-description">We visit, measure and discuss scope, budget and timing.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Design & quote</h3>
+            <p class="step-description">Clear drawings/spec and a detailed, itemised quote.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Build</h3>
+            <p class="step-description">Scheduled works with a single point of contact. Tidy, respectful.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3 class="step-title">Aftercare</h3>
+            <p class="step-description">We walk the job with you and address anything needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="areas" id="areas">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Areas we cover</h2>
+          <p class="section-description">Greater Manchester, Cheshire and the North West.</p>
+        </div>
+      </div>
+    </section>
+        
+        <!-- Founders Section -->
+        <div class="founders-section">
+          <div class="section-header">
+            <h2 class="section-title">Meet Our Founders</h2>
+            <p class="section-description">The visionary team behind Eden & Hearth's success</p>
+          </div>
+          <div class="founders-grid">
+            <div class="founder-card">
+              <div class="founder-image">
+                <img src="./abdul-tantouch.jpg" alt="Abdul Tantouch" loading="lazy">
+              </div>
+              <div class="founder-info">
+                <h3 class="founder-name">Abdul Tantouch</h3>
+                <p class="founder-title">Co-Founder & Operations Director</p>
+                <p class="founder-description">
+                  Abdul ensures seamless project management and client satisfaction across all our operations. 
+                  With a background in business operations and customer service excellence, he coordinates our 
+                  certified installation teams to deliver projects on time and within budget while maintaining 
+                  our exceptionally high standards throughout Greater Manchester and the North West.
+                </p>
+              </div>
+            </div>
+            
+            <div class="founder-card">
+              <div class="founder-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Ibrahim Berkawi" loading="lazy">
+              </div>
+              <div class="founder-info">
+                <h3 class="founder-name">Ibrahim Berkawi</h3>
+                <p class="founder-title">Co-Founder & Kitchen Installations Director</p>
+                <p class="founder-description">
+                  Ibrahim's 15 years of kitchen design and installation experience ensures every kitchen 
+                  project combines functionality with style. His attention to detail and commitment to 
+                  quality craftsmanship, supported by our team of certified kitchen installers, has earned 
+                  him recognition as a leading kitchen specialist in the North West.
+                </p>
+              </div>
+            </div>
+            
+            <div class="founder-card">
+              <div class="founder-image">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop&crop=face" alt="Hamdi Hassan" loading="lazy">
+              </div>
+              <div class="founder-info">
+                <h3 class="founder-name">Hamdi Hassan</h3>
+                <p class="founder-title">Co-Founder & Landscape Director</p>
+                <p class="founder-description">
+                  With over 12 years in landscape design and horticulture, Hamdi brings creative vision and 
+                  technical expertise to every outdoor project. His passion for sustainable landscaping and 
+                  innovative design solutions, combined with our certified landscaping installation team, 
+                  has transformed hundreds of gardens and outdoor spaces across Manchester.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get Your Free Quote Today</h2>
+          <p class="section-description">Ready to transform your space? Contact us for a free consultation and quote</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+44 7721 142 355</p>
+                <p>+44 7879 296 048</p>
+                <p>+44 7802 487 781</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>help@eden-hearth.co.uk</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Service Area</h4>
+                <p>Greater Manchester & North West</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Hours</h4>
+                <p>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="firstName" placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="lastName" placeholder="Last Name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <select name="service" required>
+                <option value="">Select Service Type</option>
+                <option value="landscaping">Landscaping</option>
+                <option value="kitchen">Kitchen Installation</option>
+                <option value="both">Both Services</option>
+                <option value="maintenance">Maintenance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <div class="logo-placeholder">E&H</div>
+              <span class="logo-text">Eden & Hearth</span>
+            </div>
+            <p class="footer-description">
+              Professional landscaping and kitchen installation services throughout Greater Manchester and the North West.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Landscape Design</a></li>
+              <li><a href="#services">Kitchen Installation</a></li>
+              <li><a href="#services">Garden Maintenance</a></li>
+              <li><a href="#services">Custom Solutions</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#portfolio">Our Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Contact Info</h4>
+            <div class="footer-contact">
+              <p><i class="fas fa-phone"></i> +44 7721 142 355</p>
+              <p><i class="fas fa-envelope"></i> help@eden-hearth.co.uk</p>
+              <p><i class="fas fa-map-marker-alt"></i> Greater Manchester & North West</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Eden & Hearth Landscaping and Kitchen Installers. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  `,p(),g(),v(),h(),m()}function p(){const a=document.getElementById("nav-toggle"),t=document.getElementById("nav-menu"),i=document.querySelectorAll(".nav-link");a?.addEventListener("click",()=>{t?.classList.toggle("active"),a.classList.toggle("active")}),i.forEach(l=>{l.addEventListener("click",e=>{e.preventDefault();const s=l.getAttribute("href")?.substring(1);s&&(window.scrollToSection(s),t?.classList.remove("active"),a?.classList.remove("active"))})}),window.addEventListener("scroll",()=>{const l=document.querySelectorAll("section"),e=window.scrollY+100;l.forEach(s=>{const o=s.offsetTop,r=o+s.offsetHeight,c=s.getAttribute("id");e>=o&&e<=r&&i.forEach(n=>{n.classList.remove("active"),n.getAttribute("href")===`#${c}`&&n.classList.add("active")})})})}function g(){const a=document.querySelectorAll(".filter-btn"),t=document.querySelectorAll(".portfolio-item");a.forEach(i=>{i.addEventListener("click",()=>{const l=i.getAttribute("data-filter");a.forEach(e=>e.classList.remove("active")),i.classList.add("active"),t.forEach(e=>{const s=e.getAttribute("data-category"),o=e;l==="all"||s===l?(o.style.display="block",setTimeout(()=>o.style.opacity="1",10)):(o.style.opacity="0",setTimeout(()=>o.style.display="none",300))})})})}function v(){const a=document.getElementById("scrollToTop");window.addEventListener("scroll",()=>{window.scrollY>300?a?.classList.add("visible"):a?.classList.remove("visible")}),a?.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})}),window.addEventListener("scroll",()=>{const t=window.scrollY,i=document.querySelector(".hero-background");i&&(i.style.transform=`translateY(${t*.5}px)`)})}function h(){const a=document.getElementById("contact-form");a?.addEventListener("submit",t=>{t.preventDefault();const i=a.querySelector('button[type="submit"]'),l=i.textContent;i.textContent="Sending...",i.disabled=!0,setTimeout(()=>{alert("Thank you for your message! We will get back to you within 24 hours."),a.reset(),i.textContent=l,i.disabled=!1},2e3)})}function m(){const a={threshold:.1,rootMargin:"0px 0px -50px 0px"},t=new IntersectionObserver(i=>{i.forEach(l=>{l.isIntersecting&&l.target.classList.add("fade-in")})},a);document.querySelectorAll(".service-card, .portfolio-item, .about-text, .contact-item").forEach(i=>{t.observe(i)})}window.scrollToSection=function(a){const t=document.getElementById(a);t&&t.scrollIntoView({behavior:"smooth",block:"start"})};d();
