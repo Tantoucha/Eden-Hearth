@@ -41,7 +41,7 @@ export function initializeWebsite() {
     </div>
 
     <!-- Main Content -->
-    <main id="main-content">`
+    <main id="main-content">
 
     <!-- HERO: Kitchens + Landscaping -->
     <link rel="preload" as="image" href="/images/kitchen-1920.jpg" fetchpriority="high">
