@@ -529,7 +529,7 @@
             
             <div class="founder-card">
               <div class="founder-image">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Ibrahim Berkawi" loading="lazy">
+                <img src="./ibrahim-berkawi.jpg" alt="Ibrahim Berkawi" loading="lazy">
               </div>
               <div class="founder-info">
                 <h3 class="founder-name">Ibrahim Berkawi</h3>
@@ -545,7 +545,7 @@
             
             <div class="founder-card">
               <div class="founder-image">
-                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop&crop=face" alt="Hamdi Hassan" loading="lazy">
+                <img src="./hamdi-hassan.jpg" alt="Hamdi Hassan" loading="lazy">
               </div>
               <div class="founder-info">
                 <h3 class="founder-name">Hamdi Hassan</h3>
