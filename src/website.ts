@@ -6,10 +6,9 @@ export function initializeWebsite() {
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
-        <div class="nav-logo">
-          <div class="logo-placeholder">E&H</div>
-          <span class="logo-text">Eden & Hearth</span>
-        </div>
+        <a href="/" class="brand">
+          <img src="/logo.svg" alt="Eden & Hearth" width="200" height="40" decoding="async">
+        </a>
         <div class="nav-menu" id="nav-menu">
           <a href="#home" class="nav-link active">Home</a>
           <a href="#services" class="nav-link">Services</a>
@@ -25,18 +24,37 @@ export function initializeWebsite() {
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-background">
-        <div class="hero-overlay"></div>
+    <!-- HERO: Kitchens + Landscaping -->
+    <link rel="preload" as="image" href="/images/kitchen-1920.jpg" fetchpriority="high">
+    <section class="hero" id="home" aria-label="Eden & Hearth — Kitchens and Landscaping">
+      <div class="hero-media">
+        <picture class="hero-img hero-img--kitchen">
+          <source srcset="/images/kitchen-1920.jpg 1920w, /images/kitchen-1280.jpg 1280w, /images/kitchen-960.jpg 960w"
+                  sizes="(min-width: 900px) 50vw, 100vw" type="image/jpeg">
+          <img src="/images/kitchen-1280.jpg" alt="Bespoke fitted kitchen with natural light"
+               loading="eager" fetchpriority="high" width="1600" height="1067">
+        </picture>
+        <picture class="hero-img hero-img--garden">
+          <source srcset="/images/garden-1920.jpg 1920w, /images/garden-1280.jpg 1280w, /images/garden-960.jpg 960w"
+                  sizes="(min-width: 900px) 50vw, 100vw" type="image/jpeg">
+          <img src="/images/garden-1280.jpg" alt="Stone patio and landscaped garden"
+               loading="lazy" width="1600" height="1067">
+        </picture>
+        <div class="hero-overlay" aria-hidden="true"></div>
       </div>
+
       <div class="hero-content">
-        <h1 class="hero-title">Elevated Interiors. Lasting Craftsmanship.</h1>
-        <p class="hero-subtitle">Tailored renovations designed for the way you live—built to endure with understated elegance.</p>
-        <div class="hero-buttons">
-          <a href="#portfolio" class="btn btn-primary">View Our Portfolio</a>
-          <a href="#contact" class="btn btn-secondary">Request a Quote</a>
+        <h1>Kitchens & Landscaping, Built Well.</h1>
+        <p>Design, installation and project management across Greater Manchester and the North West.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#portfolio">View our work</a>
+          <a class="btn btn-ghost" href="#contact">Request a quote</a>
         </div>
+        <ul class="hero-trust" aria-label="Reasons to choose us">
+          <li>Project-managed</li>
+          <li>Clear schedules &amp; pricing</li>
+          <li>Respectful on site</li>
+        </ul>
       </div>
     </section>
 
@@ -44,40 +62,42 @@ export function initializeWebsite() {
     <section class="services" id="services">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Our Premium Services</h2>
-          <p class="section-description">Eden & Hearth specializes in creating beautiful outdoor spaces and functional kitchen installations across Greater Manchester and the North West</p>
+          <h2 class="section-title">Services</h2>
+          <p class="section-description">We design and build functional kitchens and considered outdoor spaces. Our work focuses on durable materials, tidy workmanship and reliable timelines.</p>
         </div>
         <div class="services-grid">
           <div class="service-card">
             <div class="service-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3 class="service-title">Kitchens</h3>
+            <p class="service-description">Design, supply and installation of fitted kitchens, worktops and lighting. Coordination with trades. Snag-free handover.</p>
+            <ul class="service-features">
+              <li>Kitchen Design & Planning</li>
+              <li>Cabinet Installation</li>
+              <li>Worktop Installation</li>
+              <li>Lighting & Electrical</li>
+              <li>Trade Coordination</li>
+            </ul>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
               <i class="fas fa-seedling"></i>
             </div>
-            <h3 class="service-title">Landscape Design</h3>
-            <p class="service-description">Transform your outdoor space with our expert landscape design and installation services.</p>
+            <h3 class="service-title">Landscaping</h3>
+            <p class="service-description">Patios, paths and garden structures. Drainage and levels resolved properly. Planting plans available on request.</p>
             <ul class="service-features">
-              <li>Garden Planning & Design</li>
-              <li>Plant Selection & Installation</li>
-              <li>Hardscape Installation</li>
-              <li>Irrigation Systems</li>
+              <li>Patio & Path Installation</li>
+              <li>Garden Structures</li>
+              <li>Drainage Solutions</li>
+              <li>Level Correction</li>
+              <li>Planting Plans</li>
             </ul>
           </div>
-          
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-hammer"></i>
-            </div>
-            <h3 class="service-title">Kitchen Installation</h3>
-            <p class="service-description">Complete kitchen installation and renovation services for your dream kitchen.</p>
-            <ul class="service-features">
-              <li>Custom Kitchen Design</li>
-              <li>Cabinet Installation</li>
-              <li>Countertop Installation</li>
-              <li>Appliance Integration</li>
-            </ul>
-          </div>
-          
-          <div class="service-card">
-            <div class="service-icon">
+        </div>
+      </div>
+    </section>
               <i class="fas fa-tools"></i>
             </div>
             <h3 class="service-title">Maintenance</h3>
@@ -180,19 +200,9 @@ export function initializeWebsite() {
       <div class="container">
         <div class="about-content">
           <div class="about-text">
-            <h2 class="section-title">About Eden & Hearth</h2>
+            <h2 class="section-title">What we do</h2>
             <p class="about-description">
-              Eden & Hearth Landscaping and Kitchen Installers brings together passion, expertise, and innovation 
-              to transform homes across Greater Manchester and the North West. Founded by three visionary 
-              professionals, we combine years of experience in landscape design and kitchen installation to 
-              deliver exceptional results that exceed our clients' expectations.
-            </p>
-            <p class="about-description">
-              Our commitment to quality craftsmanship, attention to detail, and customer satisfaction has made 
-              us the trusted choice for homeowners looking to enhance their outdoor and indoor living spaces. 
-              Backed by our team of certified installers and skilled craftspeople, we ensure every project meets 
-              the highest professional standards. From concept to completion, we work closely with our clients 
-              to bring their vision to life.
+              We design and build functional kitchens and considered outdoor spaces. Our work focuses on durable materials, tidy workmanship and reliable timelines.
             </p>
             <div class="about-features">
               <div class="feature">
@@ -222,6 +232,49 @@ export function initializeWebsite() {
             <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=500&fit=crop" alt="Our Team" loading="lazy">
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How we work</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Consultation</h3>
+            <p class="step-description">We visit, measure and discuss scope, budget and timing.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Design & quote</h3>
+            <p class="step-description">Clear drawings/spec and a detailed, itemised quote.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Build</h3>
+            <p class="step-description">Scheduled works with a single point of contact. Tidy, respectful.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3 class="step-title">Aftercare</h3>
+            <p class="step-description">We walk the job with you and address anything needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="areas" id="areas">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Areas we cover</h2>
+          <p class="section-description">Greater Manchester, Cheshire and the North West.</p>
+        </div>
+      </div>
+    </section>
         
         <!-- Founders Section -->
         <div class="founders-section">
