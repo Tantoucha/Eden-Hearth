@@ -3,8 +3,14 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { getRequiredEnv } from '@/lib/env'
 
 const inter = Inter({ subsets: ['latin'] })
+
+// Validate environment variables in development
+if (process.env.NODE_ENV === 'development') {
+  getRequiredEnv()
+}
 
 export const metadata: Metadata = {
   title: 'Eden & Hearth - Kitchens & Landscaping | Greater Manchester & North West',

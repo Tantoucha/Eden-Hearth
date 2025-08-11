@@ -99,4 +99,39 @@ The website is configured for production deployment with:
 
 ---
 
+## 🚀 Vercel Go-Live Checklist
+
+### 1. Vercel Domain Configuration
+1. Go to **Vercel → Project → Settings → Domains**
+2. Add domains:
+   - `eden-hearth.co.uk` (Primary)
+   - `www.eden-hearth.co.uk` (Redirect to primary)
+3. Use the DNS values Vercel shows:
+   - If prompted: A record @ → 216.198.79.1
+   - CNAME record www → cname.vercel-dns.com
+
+### 2. IONOS DNS Setup
+1. Go to **IONOS → Domains & SSL → DNS**
+2. Update DNS records:
+   - Set A @ → 216.198.79.1
+   - Set CNAME www → cname.vercel-dns.com
+   - Remove old records (GitHub Pages A/AAAA/CNAME)
+
+### 3. Vercel Environment Variables
+1. Go to **Vercel → Settings → Environment Variables → Production**
+2. Add the following variables:
+   - `NEXT_PUBLIC_SITE_URL=https://eden-hearth.co.uk`
+   - `CONTACT_TO=help@eden-hearth.co.uk`
+   - `RESEND_API_KEY=...` (optional)
+   - `DATABASE_URL=...` (optional)
+3. **Redeploy Production** after adding variables
+
+### 4. Verification Steps
+1. Visit `/status` on production to confirm commit + build time
+2. Visit `/api/health` (should return `ok:true`)
+3. Test the contact form (should email CONTACT_TO if RESEND_API_KEY set)
+4. Verify that www redirects to apex domain
+
+---
+
 **Built with ❤️ for transforming spaces across Greater Manchester and the North West**

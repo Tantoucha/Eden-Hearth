@@ -12,7 +12,11 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "prebuild": "node ./scripts/make-hero-images.mjs",
-    "add:promo": "node ./scripts/copy-promo-video.mjs"
+    "add:promo": "node ./scripts/copy-promo-video.mjs",
+    "assets:import": "node ./scripts/copy-promo-video.mjs",
+    "images:build": "node ./scripts/make-hero-images.mjs",
+    "setup:assets": "npm run assets:import && npm run images:build",
+    "test:contact": "node ./scripts/test-contact.mjs"
   },
   "dependencies": {
     "next": "14.2.5",
