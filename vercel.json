@@ -2,11 +2,5 @@
   "version": 2,
   "framework": "nextjs",
   "buildCommand": "npm run build",
-  "installCommand": "npm ci",
-  "outputDirectory": null,
-  "functions": {
-    "app/api/**": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  "installCommand": "npm ci"
 }
