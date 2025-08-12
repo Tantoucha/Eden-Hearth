@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Services - Eden & Hearth | Kitchen Installations & Landscaping',
-  description: 'Professional kitchen installations and landscaping services across Greater Manchester and the North West. Quality materials, expert craftsmanship.',
+  title: 'Our Services | Kitchen Installations & Landscaping',
+  description: 'From kitchen makeovers to full garden redesigns, Eden & Hearth offers expert services with clear pricing and guaranteed quality.',
 }
 
 export default function ServicesPage() {
@@ -14,8 +14,8 @@ export default function ServicesPage() {
           <h1 className="text-4xl font-bold text-ink mb-4">
             Our Services
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Professional kitchen installations and landscaping services with quality materials, expert craftsmanship, and reliable timelines.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Kitchens, bathrooms, and outdoor spaces designed around how you live. From initial ideas to final fitting, we handle every stage with care and precision. We combine proven craftsmanship with reliable scheduling so you know exactly what to expect and when.
           </p>
         </div>
         

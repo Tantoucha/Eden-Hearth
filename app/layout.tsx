@@ -9,13 +9,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://eden-hearth.co.uk'),
-  title: 'Eden & Hearth - Kitchens & Landscaping | Greater Manchester & North West',
-  description: 'Professional kitchen installation and landscaping services across Greater Manchester and the North West. Project-managed with clear schedules and pricing.',
+  title: 'Eden & Hearth | Kitchen Installations & Landscaping in Greater Manchester',
+  description: 'Eden & Hearth designs and builds beautiful kitchens and landscaped gardens across Greater Manchester and the North West.',
   keywords: 'kitchens, landscaping, Greater Manchester, North West, kitchen installation, garden design, project management',
   authors: [{ name: 'Eden & Hearth' }],
   openGraph: {
-    title: 'Eden & Hearth - Kitchens & Landscaping, Built Well',
-    description: 'Design, installation and project management across Greater Manchester and the North West.',
+    title: 'Eden & Hearth | Kitchen Installations & Landscaping in Greater Manchester',
+    description: 'Eden & Hearth designs and builds beautiful kitchens and landscaped gardens across Greater Manchester and the North West.',
     type: 'website',
     images: ['/logo.svg'],
   },
@@ -31,7 +31,7 @@ const structuredData = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://eden-hearth.co.uk',
   logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://eden-hearth.co.uk'}/logo.svg`,
   image: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://eden-hearth.co.uk'}/images/kitchen-1920.jpg`,
-  telephone: '+44-0000-000000',
+  telephone: ['+44 7721 142 355', '+44 7879 296 048', '+44 7802 487 781'],
   email: 'hello@eden-hearth.co.uk',
   address: {
     '@type': 'PostalAddress',

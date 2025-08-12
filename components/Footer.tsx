@@ -14,8 +14,20 @@ export default function Footer() {
             <div className="space-y-2">
               <p>
                 <strong>Phone:</strong>{' '}
-                <a href="tel:+44-0000-000000" className="hover:text-accent transition-colors">
-                  +44 (0000) 000-000
+                <a href="tel:+447721142355" className="hover:text-accent transition-colors">
+                  +44 7721 142 355
+                </a>
+              </p>
+              <p>
+                <strong>Phone:</strong>{' '}
+                <a href="tel:+447879296048" className="hover:text-accent transition-colors">
+                  +44 7879 296 048
+                </a>
+              </p>
+              <p>
+                <strong>Phone:</strong>{' '}
+                <a href="tel:+447802487781" className="hover:text-accent transition-colors">
+                  +44 7802 487 781
                 </a>
               </p>
               <p>
@@ -71,7 +83,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Eden & Hearth. All rights reserved.
+            Serving Greater Manchester and the North West. Fully insured, with a 12-month workmanship guarantee.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="/privacy" className="text-sm hover:text-accent transition-colors">

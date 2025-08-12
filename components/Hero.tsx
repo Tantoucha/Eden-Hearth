@@ -88,15 +88,15 @@ export default function Hero() {
               <span className="text-accent">Built Well.</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Design, installation and project management across Greater Manchester and the North West.
+              Beautiful kitchens and outdoor spaces, designed and built with care. Serving Greater Manchester and the North West.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/portfolio" className="btn btn-primary">
-                View our work
+                View Our Projects
               </Link>
               <Link href="/contact" className="btn btn-ghost border-paper text-paper hover:bg-paper/10">
-                Request a quote
+                Request Your Free Quote
               </Link>
             </div>
 

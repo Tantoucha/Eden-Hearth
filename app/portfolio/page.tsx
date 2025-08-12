@@ -14,8 +14,8 @@ export default function PortfolioPage() {
           <h1 className="text-4xl font-bold text-ink mb-4">
             Our Portfolio
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our completed kitchen installations and landscaping projects across Greater Manchester and the North West.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Take a look at some of our recent projects in kitchens, bathrooms, and landscaping. Every project is different, but our commitment to quality and attention to detail is always the same.
           </p>
         </div>
         

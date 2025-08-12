@@ -14,8 +14,8 @@ export default function ContactPage() {
           <h1 className="text-4xl font-bold text-ink mb-4">
             Get Your Free Quote
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ready to transform your kitchen or garden? Get in touch for a free, no-obligation quote.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Whether you're ready to start your project or just want to talk through your ideas, we'd love to hear from you. Fill in the form below and we'll get back to you within one working day.
           </p>
         </div>
         
@@ -39,9 +39,17 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-ink">Phone</p>
-                    <a href="tel:+44-0000-000000" className="text-gray-600 hover:text-accent transition-colors">
-                      +44 (0000) 000-000
-                    </a>
+                    <div className="space-y-1">
+                      <a href="tel:+447721142355" className="text-gray-600 hover:text-accent transition-colors block">
+                        +44 7721 142 355
+                      </a>
+                      <a href="tel:+447879296048" className="text-gray-600 hover:text-accent transition-colors block">
+                        +44 7879 296 048
+                      </a>
+                      <a href="tel:+447802487781" className="text-gray-600 hover:text-accent transition-colors block">
+                        +44 7802 487 781
+                      </a>
+                    </div>
                   </div>
                 </div>
                 
