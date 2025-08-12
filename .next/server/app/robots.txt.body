@@ -1,6 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-
-Sitemap: https://eden-hearth.co.uk/sitemap.xml
