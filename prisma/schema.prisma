@@ -53,3 +53,24 @@ model Testimonial {
 
   @@map("testimonials")
 }
+
+model Chat {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  email     String?
+  consent   Boolean  @default(false)
+  messages  Message[]
+
+  @@map("chats")
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  chatId    String
+  role      String
+  content   String
+  createdAt DateTime @default(now())
+  chat      Chat     @relation(fields: [chatId], references: [id], onDelete: Cascade)
+
+  @@map("messages")
+}

@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import ChatWidget from '@/components/ChatWidget'
 import { getRequiredEnv } from '@/lib/env'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -79,6 +80,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ChatWidget enabled={process.env.NEXT_PUBLIC_CHAT_ENABLED === 'true'} />
       </body>
     </html>
   )
