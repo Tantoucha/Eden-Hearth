@@ -22,13 +22,10 @@ export const metadata: Metadata = {
   robots: 'index, follow',
 }
 
-// Validate environment variables in development
+// Only validate environment variables in development
 if (process.env.NODE_ENV === 'development') {
-  try {
-    getRequiredEnv()
-  } catch (error) {
-    console.warn('Environment validation warning:', error)
-  }
+  // Optional: validate environment in development only
+  // getRequiredEnv()
 }
 
 const structuredData = {
