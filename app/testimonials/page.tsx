@@ -34,9 +34,9 @@ export default function TestimonialsPage() {
               <div className="text-gray-600">Kitchens and gardens transformed across the North West</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-accent mb-2">5★</div>
-              <div className="text-lg font-semibold text-ink mb-2">Average Rating</div>
-              <div className="text-gray-600">Consistently high ratings for quality and service</div>
+              <div className="text-4xl font-bold text-accent mb-2">Fully</div>
+              <div className="text-lg font-semibold text-ink mb-2">Insured</div>
+              <div className="text-gray-600">Comprehensive public liability and professional indemnity cover</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-accent mb-2">12</div>
