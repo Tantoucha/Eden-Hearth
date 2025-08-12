@@ -57,6 +57,11 @@ a {
     height: clamp(48px, 6vh, 72px);
     width: auto;
   }
+
+  /* Media Wrapper for Blended Hero */
+  .media-wrap {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+  }
 }
 
 @layer utilities {

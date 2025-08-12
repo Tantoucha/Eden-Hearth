@@ -8,8 +8,8 @@
     "durationWeeks": 4,
     "images": [
       {"src": "/images/projects/didsbury/after-1.jpg", "alt": "Oak kitchen with quartz island and pendant lighting"},
-      {"src": "/images/projects/didsbury/after-2.jpg", "alt": "Detail of cabinet joinery and soft-close mechanisms"},
-      {"src": "/images/projects/didsbury/after-3.jpg", "alt": "Integrated appliances and handleless design"}
+      {"src": "/images/kitchen-1280.jpg", "alt": "Detail of cabinet joinery and soft-close mechanisms"},
+      {"src": "/images/kitchen-960.jpg", "alt": "Integrated appliances and handleless design"}
     ],
     "beforeAfter": {
       "before": "/images/projects/didsbury/before.jpg",
@@ -21,6 +21,40 @@
     }
   },
   {
+    "slug": "sale-porcelain-patio",
+    "title": "Sale — Porcelain Patio & Steps",
+    "location": "Sale",
+    "categories": ["Landscaping", "Patios"],
+    "summary": "Modern porcelain patio with raised planters and integrated lighting. Complete rear garden transformation with drainage solutions.",
+    "durationWeeks": 2,
+    "images": [
+      {"src": "/images/projects/sale-patio/after-1.jpg", "alt": "Modern UK patio with porcelain tiles and raised planters"},
+      {"src": "/images/projects/sale-patio/after-2.jpg", "alt": "Closeboard fence with landscaped border planting"},
+      {"src": "/images/projects/sale-patio/after-3.jpg", "alt": "Sandstone patio with natural stone steps"}
+    ],
+    "testimonial": {
+      "quote": "Clear timeline, no surprises on price, and they kept the neighbours happy. The patio drains perfectly—no pooling even after heavy rain.",
+      "author": "Dan & Priya K., Sale"
+    }
+  },
+  {
+    "slug": "chorlton-garden-redesign",
+    "title": "Chorlton — Contemporary Garden Design",
+    "location": "Chorlton",
+    "categories": ["Landscaping", "Garden Structures"],
+    "summary": "Full garden redesign with artificial grass, sleeper borders, and contemporary planting scheme. Low-maintenance solution for busy family.",
+    "durationWeeks": 3,
+    "images": [
+      {"src": "/images/projects/chorlton-garden/after-1.jpg", "alt": "Contemporary garden with artificial grass and sleeper borders"},
+      {"src": "/images/projects/chorlton-garden/after-2.jpg", "alt": "UK rear garden transformation with decking and planting"},
+      {"src": "/images/projects/chorlton-garden/after-3.jpg", "alt": "Block paved driveway and front garden landscaping"}
+    ],
+    "testimonial": {
+      "quote": "Good communication and a tidy site. We lived through the works; dust kept down and doors sealed. The lighting plan makes a big difference.",
+      "author": "Michael O., Chorlton"
+    }
+  },
+  {
     "slug": "wilmslow-patio-2024",
     "title": "Wilmslow — Sandstone Patio & Garden",
     "location": "Wilmslow",
@@ -29,8 +63,8 @@
     "durationWeeks": 3,
     "images": [
       {"src": "/images/projects/wilmslow/after-1.jpg", "alt": "Sandstone patio with integrated planters"},
-      {"src": "/images/projects/wilmslow/after-2.jpg", "alt": "Garden structure with climbing frame"},
-      {"src": "/images/projects/wilmslow/after-3.jpg", "alt": "Drainage channels and level changes"}
+      {"src": "/images/garden-960.jpg", "alt": "Garden structure with climbing frame"},
+      {"src": "/images/garden-1280.jpg", "alt": "Drainage channels and level changes"}
     ],
     "beforeAfter": {
       "before": "/images/projects/wilmslow/before.jpg",
@@ -50,8 +84,8 @@
     "durationWeeks": 6,
     "images": [
       {"src": "/images/projects/altrincham/after-1.jpg", "alt": "Open plan kitchen extension with bi-fold doors"},
-      {"src": "/images/projects/altrincham/after-2.jpg", "alt": "Kitchen island with breakfast bar seating"},
-      {"src": "/images/projects/altrincham/after-3.jpg", "alt": "Coordinated utility room design"}
+      {"src": "/images/kitchen-960.jpg", "alt": "Kitchen island with breakfast bar seating"},
+      {"src": "/images/kitchen-1920.jpg", "alt": "Coordinated utility room design"}
     ],
     "testimonial": {
       "quote": "Exceeded expectations. The project management was excellent throughout.",
