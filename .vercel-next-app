@@ -1,0 +1,21 @@
+# Force Vercel to recognize this as Next.js
+
+This is a Next.js 14.2.31 application with the following structure:
+
+- Framework: Next.js
+- Build Command: npm run build  
+- Install Command: npm ci
+- Output Directory: (auto-detected by Next.js)
+- Root Directory: / (project root)
+
+The application includes:
+- 22 static/dynamic pages
+- API routes: /api/health, /api/contact, /api/deployment-test
+- Server-side rendering with React 18
+
+Build verification:
+- Local build: ✅ SUCCESS (22 pages generated)
+- TypeScript: ✅ No errors
+- Dependencies: ✅ All resolved
+
+This should be deployed as a Next.js application, not a static site.

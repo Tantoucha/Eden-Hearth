@@ -23,7 +23,10 @@
     "assets:import": "node ./scripts/copy-promo-video.mjs",
     "images:build": "node ./scripts/make-hero-images.mjs",
     "setup:assets": "npm run assets:import && npm run images:build",
-    "test:contact": "node ./scripts/test-contact.mjs"
+    "test:contact": "node ./scripts/test-contact.mjs",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy"
   },
   "dependencies": {
     "@prisma/client": "^5.17.0",
