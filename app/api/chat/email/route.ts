@@ -1,16 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { PrismaClient } from '@prisma/client'
+import { getDb } from '@/lib/db-check'
 import { Resend } from 'resend'
-
-// Initialize Prisma (optional)
-let prisma: PrismaClient | null = null
-try {
-  if (process.env.DATABASE_URL) {
-    prisma = new PrismaClient()
-  }
-} catch (error) {
-  console.warn('Prisma initialization failed, database features disabled:', error)
-}
 
 // Initialize Resend (optional)
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
@@ -24,6 +14,7 @@ export async function POST(req: NextRequest) {
       )
     }
 
+    const prisma = await getDb()
     if (!prisma) {
       return NextResponse.json(
         { error: 'Database not available for transcript retrieval' },

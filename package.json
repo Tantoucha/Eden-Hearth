@@ -24,6 +24,7 @@
     "images:build": "node ./scripts/make-hero-images.mjs",
     "setup:assets": "npm run assets:import && npm run images:build",
     "test:contact": "node ./scripts/test-contact.mjs",
+    "vercel-build": "prisma generate && prisma migrate deploy || echo \"[warn] migrate skipped\" && next build",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:deploy": "prisma migrate deploy"
