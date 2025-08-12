@@ -91,5 +91,76 @@
       "quote": "Exceeded expectations. The project management was excellent throughout.",
       "author": "R. Williams, Altrincham"
     }
+  },
+  {
+    "slug": "stockport-garden-transformation",
+    "title": "Stockport — Complete Garden Transformation",
+    "location": "Stockport",
+    "categories": ["Landscaping", "Patios", "Garden Structures"],
+    "summary": "Comprehensive rear garden redesign featuring Indian sandstone patio, raised planters, timber decking, and contemporary boundary treatments.",
+    "durationWeeks": 4,
+    "images": [
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-47.jpg", "alt": "Indian sandstone patio with raised planters and timber boundaries"},
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-48.jpg", "alt": "Completed patio area with professional landscaping and drainage"},
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-49.jpg", "alt": "Detail of patio edging and boundary fencing installation"}
+    ],
+    "beforeAfter": {
+      "before": "/images/gallery/PHOTO-2025-06-16-19-59-47 2.jpg",
+      "after": "/images/gallery/PHOTO-2025-06-16-19-59-47.jpg"
+    },
+    "testimonial": {
+      "quote": "Incredible transformation. They turned our muddy back garden into something we actually want to spend time in.",
+      "author": "Sarah & Tom L., Stockport"
+    }
+  },
+  {
+    "slug": "manchester-contemporary-landscaping",
+    "title": "Manchester — Contemporary Landscaping",
+    "location": "Manchester",
+    "categories": ["Landscaping", "Patios"],
+    "summary": "Modern patio installation with sleek lines, integrated drainage, and low-maintenance contemporary planting scheme.",
+    "durationWeeks": 3,
+    "images": [
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-50.jpg", "alt": "Contemporary patio with clean lines and modern materials"},
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-51.jpg", "alt": "Integrated landscaping with raised beds and timber features"},
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-52.jpg", "alt": "Professional drainage solutions and level changes"}
+    ],
+    "testimonial": {
+      "quote": "Professional finish and they kept to schedule. Neighbours have been asking who did our garden.",
+      "author": "David M., Manchester"
+    }
+  },
+  {
+    "slug": "trafford-patio-extension",
+    "title": "Trafford — Patio Extension & Boundaries",
+    "location": "Trafford",
+    "categories": ["Landscaping", "Patios", "Fencing"],
+    "summary": "Extended patio area with new boundary treatments, raised planters, and comprehensive drainage solutions.",
+    "durationWeeks": 2,
+    "images": [
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-53.jpg", "alt": "Extended patio with boundary fencing and raised planters"},
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-54.jpg", "alt": "Detail of patio extension and integrated landscaping"},
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-55.jpg", "alt": "Completed boundary treatments and drainage systems"}
+    ],
+    "testimonial": {
+      "quote": "Quick, tidy, and reasonably priced. The drainage works perfectly - no more puddles.",
+      "author": "Lisa K., Trafford"
+    }
+  },
+  {
+    "slug": "oldham-garden-redesign",
+    "title": "Oldham — Garden Redesign & Features",
+    "location": "Oldham",
+    "categories": ["Landscaping", "Garden Structures"],
+    "summary": "Complete garden makeover with feature walls, integrated seating, timber structures, and mature planting scheme.",
+    "durationWeeks": 3,
+    "images": [
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-56.jpg", "alt": "Garden redesign with feature walls and integrated seating"},
+      {"src": "/images/gallery/PHOTO-2025-06-16-19-59-57.jpg", "alt": "Timber structures and mature planting installation"}
+    ],
+    "testimonial": {
+      "quote": "They listened to what we wanted and delivered exactly that. Great attention to detail.",
+      "author": "Mark & Jenny R., Oldham"
+    }
   }
 ]
