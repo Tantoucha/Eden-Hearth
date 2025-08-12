@@ -16,13 +16,13 @@ export default function AboutPage() {
       bio: 'Abdul oversees the smooth running of every project from start to finish. With over ten years of experience in the construction industry, including a strong background in research and project management, he ensures that work is completed on time, on budget, and to the highest standard. Clients value his calm, organised approach and the way he keeps every detail under control.',
     },
     {
-      name: 'Ibrahim',
+      name: 'Ibrahim El-Berkawi',
       title: 'Kitchen & Interior Specialist',
       image: '/ibrahim-berkawi.jpg',
       bio: 'Ibrahim has extensive experience in kitchen installations and home improvement projects across the RMI sector. He is known for his precision, craftsmanship, and ability to make the most of any space. From contemporary layouts to traditional designs, Ibrahim brings ideas to life with a focus on both function and finish.',
     },
     {
-      name: 'Hamdi',
+      name: 'Hamdi Sewillam',
       title: 'Landscaping & Outdoor Projects Lead',
       image: '/hamdi-hassan.jpg',
       bio: 'Hamdi has worked on a wide variety of landscaping and general construction projects. He specialises in creating outdoor spaces that look beautiful and work perfectly for everyday use. Whether it\'s a new patio, a complete garden redesign, or practical hard landscaping, Hamdi\'s work is built to last and tailored to each client\'s needs.',
