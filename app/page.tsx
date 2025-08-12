@@ -1,11 +1,17 @@
-import React from "react"
+import Hero from "@/components/Hero"
+import FeaturedProjects from "@/components/FeaturedProjects"
+import TestimonialsSnippet from "@/components/TestimonialsSnippet"
+import FAQsSnippet from "@/components/FAQsSnippet"
+import TrustStrip from "@/components/TrustStrip"
 
 export default function HomePage() {
   return (
-    <div style={{ padding: "2rem", textAlign: "center", fontFamily: "system-ui" }}>
-      <h1>🏡 Eden & Hearth - WORKING!</h1>
-      <p>Next.js deployment successful!</p>
-      <p>Build time: {new Date().toISOString()}</p>
+    <div className="min-h-screen bg-paper">
+      <Hero />
+      <TrustStrip />
+      <FeaturedProjects />
+      <TestimonialsSnippet />
+      <FAQsSnippet />
     </div>
   )
 }
