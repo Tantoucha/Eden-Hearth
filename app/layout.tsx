@@ -22,11 +22,7 @@ export const metadata: Metadata = {
   robots: 'index, follow',
 }
 
-// Only validate environment variables in development
-if (process.env.NODE_ENV === 'development') {
-  // Optional: validate environment in development only
-  // getRequiredEnv()
-}
+// Environment validation is disabled for production deployment
 
 const structuredData = {
   '@context': 'https://schema.org',
